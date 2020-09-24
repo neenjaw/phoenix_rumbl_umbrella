@@ -1,5 +1,5 @@
 defmodule InfoSys.Counter do
-  use GenServer
+  use GenServer, restart: :permanent
 
   def inc(pid) do
     GenServer.cast(pid, :inc)
