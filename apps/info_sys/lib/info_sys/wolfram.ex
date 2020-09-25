@@ -14,7 +14,7 @@ defmodule InfoSys.Wolfram do
     query_str
     |> fetch_xml()
     |> xpath(~x"/queryresult/pod[contains(@title, 'Result') or
-                                 contains(@title, 'Definition')]
+                                 contains(@title, 'Definitions')]
                             /subpod/plaintext/text()")
     |> build_results()
   end
