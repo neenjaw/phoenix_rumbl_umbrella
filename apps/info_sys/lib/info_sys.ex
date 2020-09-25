@@ -1,4 +1,6 @@
 defmodule InfoSys do
+  require Logger
+
   alias InfoSys.Cache
 
   @backends [
